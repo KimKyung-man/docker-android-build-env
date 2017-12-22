@@ -19,4 +19,4 @@ Fastlane 을 사용하자.
 1. git clone repository
 1. docker build -t {image name}:{tag} (원하는)
 1. 이미지가 생성이 되면, Dockerfile 을 수정하지 않는 한 안봐도 된다.
-1. docker run -e GIT_REPO_URL={git repository URL(HTTP or HTTPS)} -e GIT_REPO_DIRECTORY={app module directory} -e FABRIC_TASK={target fastlane lane name} -e GIT_BRANCH={target branch} -e FASTLANE_LANE={target fastlane-lane} -it -m=4g {imagename}:{tag}
+1. docker run -e GIT_REPO_URL={git repository URL(HTTP or HTTPS)} -e GIT_REPO_DIRECTORY={app module directory} -e GIT_BRANCH={target branch} -e FASTLANE_LANE={target fastlane-lane} -it -m=4g {imagename}:{tag}
